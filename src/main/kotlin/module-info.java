@@ -5,4 +5,6 @@ module testmodule {
     requires kotlin.stdlib;
     opens ui;
     opens ui.example;
+    opens ui.login;
+    opens ui.main;
 }

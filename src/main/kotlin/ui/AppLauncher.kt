@@ -1,7 +1,7 @@
 package ui
 
 import tornadofx.App
-import ui.example.SwapView1
-import ui.example.ViewModalExample
+import ui.login.LoginView
+import ui.main.MainView
 
-class AppLauncher: App(SwapView1::class)
+class AppLauncher: App(MainView::class)
