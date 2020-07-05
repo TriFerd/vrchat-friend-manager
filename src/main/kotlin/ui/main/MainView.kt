@@ -1,11 +1,16 @@
 package ui.main
 
 import javafx.collections.FXCollections
+import javafx.collections.ObservableList
+import model.User
+import model.getDefaultUser
 import tornadofx.*
 
 class MainView: View() {
 
     val sortOptions = FXCollections.observableArrayList("username", "last updated", "friend added")
+    // todo: remove this
+    private val userList : ObservableList<User> = observableListOf(List(5) { getDefaultUser(it)})
 
     override val root = borderpane() {
         top = hbox {
@@ -28,7 +33,7 @@ class MainView: View() {
             button("Settings") {
 
             }
-            center = label("user list")
+            center = FriendOverviewList(userList).root
         }
     }
 
