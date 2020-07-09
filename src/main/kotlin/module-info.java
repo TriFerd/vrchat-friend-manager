@@ -7,4 +7,5 @@ module testmodule {
     opens ui.example;
     opens ui.login;
     opens ui.main;
+    opens ui.detail;
 }
