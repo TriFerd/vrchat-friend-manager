@@ -5,4 +5,4 @@ import ui.detail.UserDetailView
 import ui.login.LoginView
 import ui.main.MainView
 
-class AppLauncher: App(MainView::class)
+class AppLauncher: App(UserDetailView::class)
